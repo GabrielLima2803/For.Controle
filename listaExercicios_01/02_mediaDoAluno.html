@@ -7,11 +7,16 @@
     */
 
     //ENTRADA
-
-
+    const perguntaProfessor = Number(prompt("Informe quantas notas o aluno recebeu"));
+    let somaNotas = 0
     //PROCESSAMENTO
 
-
+    for (let controle = 1; controle <= perguntaProfessor; controle++) {
+       let notas = Number(prompt("Quais as notas que ele recebeu")) 
+        somaNotas = somaNotas + notas;
+    }
+    const media = somaNotas/perguntaProfessor
+    document.write(media.toFixed(2))
     //SAÍDA
 
 </script>
