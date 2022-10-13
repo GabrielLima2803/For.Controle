@@ -6,11 +6,28 @@
     */
 
     //ENTRADA
+    const numeroInicial = Number(prompt("Informe um número inicial"));
+    const numeroFinal = Number(prompt("Informe um número Final"))
+    let I = [];
+    let P = [];
 
 
     //PROCESSAMENTO
-
-
+    for (let controle = numeroInicial; controle <= numeroFinal; controle++) {
+        if (controle % 2 === 0) {
+            P.push(controle)
+        }
+        else{
+            I.push(controle)
+        }
+        
+    }
+    if (numeroFinal <= numeroInicial) {
+        document.write(`ERRO`)
+    }
+    else{
+        document.write(`Lista número pares ${P} </br> Lista número Impar ${I} <br> Ponto inical ${numeroInicial} </br> Ponto Fianl ${numeroFinal}`)
+    }
     //SAÍDA
 
 </script>

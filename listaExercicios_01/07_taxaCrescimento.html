@@ -6,11 +6,16 @@
     */
 
     //ENTRADA
-
-
+    let populaçaoAtual = 80000
+    const taxaCrescimento = 0.03
+    const populaçaoFinal = 200000
     //PROCESSAMENTO
+    let anos = 0;
 
-
+    for (anos = 1; populaçaoAtual < populaçaoFinal; anos++) {
+        populaçaoAtual = populaçaoAtual + (populaçaoAtual* taxaCrescimento)
+        
+    }
     //SAÍDA
-
+    document.write(`Serão necessários ${anos}`);
 </script>
