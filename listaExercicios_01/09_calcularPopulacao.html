@@ -6,11 +6,23 @@
     */
 
     //ENTRADA
-
+    let populacaoAtual = 50000;
+    const media = (1.5/100)
+    let respota5 = "";
+    let respota10 = "";
 
     //PROCESSAMENTO
-
+    for (let anos = 1; anos <= 10; anos++) {
+        populacaoAtual = populacaoAtual + (populacaoAtual * media)
+        if (anos === 5) {
+            respota5 = `Este e o valor em 5 anos ${populacaoAtual.toFixed(2)}`
+        }
+        else{
+            respota10 = `Este e o valor em 10 anos ${populacaoAtual.toFixed(2)}`
+        }
+        
+    }
 
     //SAÍDA
-
+    document.write(`Os valores sao ${respota5} </br> Os valores sao ${respota10} `)
 </script>
